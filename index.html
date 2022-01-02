@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="content">
+        <header class="global-header">
+            <h1 class="logo">
+                To-do list
+            </h1>
+            <nav class="todo-category">
+                <h2 class="visually-hidden">menu</h2>
+                <ul class="todo-category-list">
+                    <li class="todo-category-item">
+                        <button class="todo-category-name">Event</button>
+                    </li>
+                    <li class="todo-category-item">
+                        <button class="todo-category-name">Work</button>
+                    </li>
+                    <li class="todo-category-item">
+                        <button class="todo-category-name">Shopping</button>
+                    </li>
+                    <li class="todo-category-item">
+                        <button class="todo-category-name">Health</button>
+                    </li>
+                    <li class="todo-category-item">
+                        <button class="todo-category-name">Personal</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="add-todo">
+            <div class="chosen-category">
+                <h2 class="chosen-category-name">Event</h2>
+                <span class="list-count">0</span>
+            </div>
+            <div class="todo-form-wrapper">
+                <form class="todo-form">
+                    <label for="todo-name" class="visually-hidden">Event</label>
+                    <input type="text" id="todo-name" class="input-field" placeholder="Add your new todo">
+                    <button type="button" class="input-submit">Add</button>
+                </form>
+            </div>
+            <ul class="todo-list">
+                <!-- <li class="todo-list-item">
+                    <span class="todo-name">test code</span>
+                    <button type="button" class="todo-item-button edit-button">edit</button>
+                    <button type="button" class="todo-item-button delete-button">delete</button>
+                </li>
+                <li class="todo-list-item">
+                    <span class="todo-name">test code</span>
+                    <button type="button" class="todo-item-button edit-button">edit</button>
+                    <button type="button" class="todo-item-button delete-button">delete</button>
+                </li> -->
+            </ul>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
